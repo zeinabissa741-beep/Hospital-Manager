@@ -1,0 +1,19 @@
+# Visual Studio user-specific files
+.vs/
+*.user
+*.suo
+
+# Build output
+bin/
+obj/
+
+# Logs
+*.log
+
+# NuGet packages
+packages/
+*.nupkg
+
+# Other
+*.cache
+*.dbmdl
