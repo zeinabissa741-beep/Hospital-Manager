@@ -1,0 +1,244 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+h1 {
+  padding: 20px;
+  margin: 0;
+  flex: 0 0 auto;
+  font-size: 2rem;
+  text-align: center;
+
+}
+
+.task-box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  gap: 0.5rem;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  background-color: white;
+  position: relative;
+  padding: 1rem;
+}
+
+.task-box,
+.A {
+  cursor: move;
+  background-color: #eedaff !important;
+  padding: 1rem;
+  border-radius: 8px;
+  width: 100%;
+  box-shadow: rgba(99, 99, 99, 0.1) 0px 2px 8px 0px;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+  border: 3px dashed transparent;
+  text-transform: none !important;
+  justify-content: flex-start !important;
+  text-align: left;
+  outline: none !important;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease !important;
+}
+
+
+/* Remove MUI ripple / background on hover */
+.task-box.MuiButtonBase-root:hover {
+  background-color: #f7f3ffa4 !important;
+  box-shadow: rgba(77, 76, 76, 0.726) 0px 2px 8px 0px !important;
+  border-color: rgba(241, 185, 246, 0.76) !important;
+}
+
+/* Remove focus outline / shadow */
+.task-box.Mui-focusVisible,
+.task-box:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.button-text {
+  font-size: 1rem;
+  font-weight: 300;
+  color: #7d63af;
+}
+
+.task-column {
+  display: flex;
+  gap: 16px;
+  height: 70vh;
+  align-items: flex-start;
+  overflow: hidden !important;
+  gap: 16px;
+}
+
+.task-column>div {
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+  border-radius: 8px;
+  flex: 1;
+  max-height: 100%;
+  scrollbar-color: #cbd5e1 transparent;
+}
+
+.InProgress,
+.Done {
+  /*flex: 1 !important;*/
+  background-color:#cdbeff52;
+  backdrop-filter: blur(20px);
+  min-width: 300px !important;
+  border: 3px dashed transparent !important;
+  border-radius: 8px !important;
+  margin-bottom: 0rem !important;
+  justify-content: flex-start !important;
+}
+
+.task-block .Date {
+  color: rgba(77, 76, 76, 0.726);
+  position: relative;
+  width: 100%;
+  color: var(--light-grey);
+  font-size: 12px;
+
+  span:not(:last-of-type) {
+    margin-right: 1rem;
+  }
+
+  svg {
+    margin-right: 5px;
+  }
+}
+
+.task-column-blocks {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 8px 0;
+  overflow-y: scroll;
+  flex: 1;
+  width: 17rem;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.AddTask {
+  font-size: 1rem !important;
+  font-weight: 300;
+  color: #ffffff !important;
+}
+
+.AddTask,
+.A {
+  cursor: move;
+  padding: 1rem;
+  border-radius: 8px;
+  width: 100%;
+  box-shadow: rgba(99, 99, 99, 0.1) 0px 2px 8px 0px;
+  margin-bottom: 1rem;
+  border: 3px dashed transparent;
+  text-transform: none !important;
+  justify-content: flex-start !important;
+  text-align: left;
+  outline: none !important;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease !important;
+}
+
+/* Remove MUI ripple / background on hover */
+.Add-Task.MuiButtonBase-root:hover {
+  background-color: #fbb4f0 !important;
+  box-shadow: rgba(77, 76, 76, 0.726) 0px 2px 8px 0px !important;
+  border-color: rgba(241, 185, 246, 0.76) !important;
+}
+
+/* Remove focus outline / shadow */
+.AddTask.Mui-focusVisible,
+.AddTask:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.DialogHeader {
+  font-size: large !important;
+  font-weight: 900 !important;
+  color: #dbc8ff;
+
+}
+
+.DialogViewPort p {
+  display: flex;
+  gap: 8px;
+  /* space between label and value */
+  margin-bottom: 8px;
+  /* space between rows */
+  color: rgb(255, 255, 255)
+}
+
+.EntireDialog {
+  background-color: rgba(255, 224, 254, 0.4) !important;
+  backdrop-filter: blur(20px) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
+  border-radius: 12px !important;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+
+.DialogViewPort p strong {
+  width: 150px;
+  /* fixed width for all labels */
+  flex-shrink: 0;
+}
+
+.SelectMenu {
+  background-color: rgba(255, 224, 254, 0.4) !important;
+  backdrop-filter: blur(20px) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
+  border-radius: 12px !important;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1) !important;
+}
+
+.InProgressDialog {
+  border: 1px solid #dfc9ffff;
+  border-radius: 4px;
+  padding: 16.5px 14px;
+  font-size: 16px;
+  color: #dfc9ffff;
+  font-weight: 600;
+  font-family: 'Courier New', Courier, monospace;
+  margin-top: 16px 0;
+  transition: border-color 0.3s ease;
+}
+
+/* Hover state like TextField */
+.InProgressDialog:hover {
+  border-color: #f8cde3;
+}
+
+/* Focus state (if you want click-to-focus like an input) */
+.InProgressDialog:focus {
+  border-color: #b894fb;
+  outline: none;
+}
+
+.css-vycme6-MuiPickersInputBase-root-MuiPickersOutlinedInput-root.Mui-focused:not(.Mui-error) .MuiPickersOutlinedInput-notchedOutline {
+  border-color: #b894fb !important;
+}
+
+.task-checkbox {
+  pointer-events: all;
+}
+

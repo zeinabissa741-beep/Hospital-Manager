@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^7.0.1",
+    "@mui/x-data-grid": "^8.11.2"
+  }
+}
