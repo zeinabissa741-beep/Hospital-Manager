@@ -1,0 +1,91 @@
+body.profile-body {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    text-align: left !important;
+    box-sizing: border-box;
+    width: 100% !important;
+    padding: 1rem;
+    margin: 0 !important;
+    justify-content: flex-start !important;
+    align-self: flex-start !important;
+    justify-self: start !important;
+    position: relative !important;
+    left: 0 !important;
+    transform: none !important;
+}
+
+
+.EditingButtons {
+    display: flex !important;
+    gap: 4rem !important;
+    justify-content: flex-start !important;
+    font-family: 'Courier New', Courier, monospace !important;
+    font-size: large !important;
+}
+
+.UserInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    gap: 1rem;
+    max-width: 400px;
+}
+
+.UserNameProfile,
+.EmailProfile {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    margin-bottom: 5vh;
+    font-size: x-large;
+}
+
+.UserLabel {
+    min-width: 120px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 1;
+
+}
+
+.UserNameProfile input,
+.EmailProfile input {
+    flex: 1;
+    font-size: 16px;
+
+}
+
+.EditActions {
+    display: flex;
+    justify-content: space-between;
+    justify-content: flex-end;
+    gap: 17rem;
+
+}
+
+.EditButton {
+    color: #8746ff;
+    font-weight: bold;
+    background-color: #ffffff51;
+    font-family: 'Courier New', Courier, monospace;
+    transition: background-color 0.3s ease;
+
+}
+
+.EditButton:hover {
+    background-color: #ffffff7d;
+}
+
+
+.XMark {
+    align-self: flex-end !important;
+}
+
+.Checkmark {
+    align-self: flex-start !important;
+}

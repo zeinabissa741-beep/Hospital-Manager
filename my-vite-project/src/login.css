@@ -1,0 +1,127 @@
+/*style from: https://codepen.io/blahhhuuei/pen/KwpQVGW?editors=0100*/
+
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@300;400;500;600&display=swap');
+
+root {
+    --amethyst: #bd4ad4;
+    --orchid: #df48d7;
+    --violet: #12061f;
+    --meteorite: #3f1c7e;
+    --mauve: #b894fb;
+    --vivid-violet: ;
+    --royal-heath: #a83a91;
+    --violet: #260847;
+    --purple-heart: #6a4ad7;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.Login-wrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/UserRole-Logo.jpg");
+    background-color: #8231a7;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.login-container {
+    display: flex;
+    place-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 400px;
+    padding: 40px;
+    border-radius: 15px;
+    color: aliceblue;
+    gap: 20px;
+    background-color: rgba(188, 160, 190, 0.374);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 8px 32px rgba(251, 208, 255, 0.452);
+}
+
+.login-container h1 {
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 5px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.login-container label {
+    justify-content: center;
+    width: 12%;
+    font-size: 20px;
+    float: left;
+    flex-shrink: 0;
+    align-items: center;
+    clear: both;
+}
+
+.Email,
+.Password {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    gap: 0;
+}
+
+
+
+.login-container input {
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    padding: 10px;
+    margin: 9px 0;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    font-size: 16px;
+    float: right;
+    background-color: rgba(188, 160, 190, 0.272);
+
+
+    &&:hover {
+        border-color: #bdbbbbff;
+    }
+
+    &&:focus {
+        border-color: #3f1c7e !important;
+
+    }
+}
+
+.login-container button {
+    align-items: center center;
+    justify-content: center center;
+    width: 34%;
+    height: 55px;
+    padding: 15px;
+    margin-top: 9px;
+    background: #b894fb;
+    color: #fff;
+    font-size: 30px;
+    display: block;
+    margin: 0 auto;
+    font-family: 'Courier New', Courier, monospace;
+    cursor: pointer;
+    transition: 0.3s;
+}
